@@ -1,0 +1,150 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "emailOrPhone": "test@example.com",
+      "name": "Testing",
+      "password": "123456"
+    },
+    {
+      "id": "f7f7",
+      "emailOrPhone": "prashanth",
+      "name": "Prashanth",
+      "password": "123456"
+    },
+    {
+      "id": "6c54",
+      "emailOrPhone": "p1@gmail.com",
+      "name": "PearlThoghts",
+      "password": "11111"
+    },
+    {
+      "id": "ce74",
+      "name": "prashanth",
+      "emailOrPhone": "p2@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "appointments": [],
+  "doctors": [
+    {
+      "id": "1",
+      "name": "Dr. Kumar Das",
+      "specialization": "Ophthalmologist",
+      "degree": "MBBS, MS (Surgeon)",
+      "about": "15+ years of experience in all aspects of cardiology, including non-invasive procedures.",
+      "patients": "5000+",
+      "experience": "10",
+      "rating": "4.8",
+      "reviews": "4942",
+      "service": "Medicare",
+      "availability": {
+        "days": "Monday to Friday",
+        "time": "10 PM to 5 PM"
+      },
+      "image": "/Imgs/DoctorsImg/dr2.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Dr. Shikha",
+      "specialization": "Dermatologist",
+      "degree": "MBBS, MD (Dermatology)",
+      "about": "Specializes in treating skin disorders, cosmetic dermatology, and laser procedures with 12+ years of experience.",
+      "patients": "3200+",
+      "experience": "12",
+      "rating": "4.7",
+      "reviews": "2876",
+      "service": "SkinCare Plus",
+      "availability": {
+        "days": "Tuesday to Saturday",
+        "time": "9 AM to 3 PM"
+      },
+      "image": "/Imgs/DoctorsImg/dr1.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Dr. Rajeev Kapoor",
+      "specialization": "Orthopedic Surgeon",
+      "degree": "MBBS, MS (Ortho)",
+      "about": "Expert in joint replacement surgeries and sports injuries with more than 20 years of clinical experience.",
+      "patients": "7000+",
+      "experience": "20",
+      "rating": "4.9",
+      "reviews": "6100",
+      "service": "OrthoCare",
+      "availability": {
+        "days": "Monday, Wednesday, Friday",
+        "time": "10 AM to 4 PM"
+      },
+      "image": "/Imgs/DoctorsImg/dr3.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Dr. Farah Siddiqui",
+      "specialization": "Pediatrician",
+      "degree": "MBBS, DCH",
+      "about": "10+ years of experience in pediatric medicine, specializing in child nutrition and immunizations.",
+      "patients": "4500+",
+      "experience": "10",
+      "rating": "4.6",
+      "reviews": "3987",
+      "service": "ChildWell",
+      "availability": {
+        "days": "Monday to Thursday",
+        "time": "8 AM to 2 PM"
+      },
+      "image": "/Imgs/DoctorsImg/dr1.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Dr. Sanjay Rao",
+      "specialization": "Cardiologist",
+      "degree": "MBBS, DM (Cardiology)",
+      "about": "Renowned for non-invasive cardiac procedures and heart failure management with 18 years of experience.",
+      "patients": "8000+",
+      "experience": "18",
+      "rating": "4.9",
+      "reviews": "7554",
+      "service": "HeartPlus",
+      "availability": {
+        "days": "Monday to Saturday",
+        "time": "11 AM to 6 PM"
+      },
+      "image": "/Imgs/DoctorsImg/dr2.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Dr. Shikha",
+      "specialization": "Dermatologist",
+      "degree": "MBBS, MD (Dermatology)",
+      "about": "Specializes in treating skin disorders, cosmetic dermatology, and laser procedures with 12+ years of experience.",
+      "patients": "3200+",
+      "experience": "12",
+      "rating": "4.7",
+      "reviews": "2876",
+      "service": "SkinCare Plus",
+      "availability": {
+        "days": "Tuesday to Saturday",
+        "time": "9 AM to 3 PM"
+      },
+      "image": "/Imgs/DoctorsImg/dr1.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Dr. Rajeev Kapoor",
+      "specialization": "Orthopedic Surgeon",
+      "degree": "MBBS, MS (Ortho)",
+      "about": "Expert in joint replacement surgeries and sports injuries with more than 20 years of clinical experience.",
+      "patients": "7000+",
+      "experience": "20",
+      "rating": "4.9",
+      "reviews": "6100",
+      "service": "OrthoCare",
+      "availability": {
+        "days": "Monday, Wednesday, Friday",
+        "time": "10 AM to 4 PM"
+      },
+      "image": "/Imgs/DoctorsImg/dr3.jpg"
+    }
+  ]
+}
