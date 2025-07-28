@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 🩺 Shedula - Doctor Appointment Booking App
 
-## Getting Started
+A responsive doctor appointment booking app built using **Next.js 14 (App Router)**, **Tailwind CSS**, and **JSON Server** as a mock backend.
 
-First, run the development server:
+🚀 **Live Demo:** [Click here](https://pearl-thoughts-doctor-appontment-bo-flax.vercel.app/login)
+📦 **Mock API:** Powered by [JSON Server](https://github.com/typicode/json-server)
+
+---
+
+### ✨ Features
+
+* 🔐 OTP-based login (mocked)
+* 🩺 Browse and view doctor profiles
+* 📅 Book appointments by date and time slot
+* 🔍 Search doctors
+* 📱 Mobile-first UI (450px layout on all devices)
+* ✅ Mock backend with JSON Server (`db.json`)
+* 🌐 Deployed on Vercel
+
+---
+
+### 🛠️ Tech Stack
+
+| Layer      | Technology                            |
+| ---------- | ------------------------------------- |
+| Frontend   | Next.js 14 (App Router), Tailwind CSS |
+| Backend    | JSON Server (Mock API)                |
+| Auth       | Mock OTP login (no real SMS/email)    |
+| Deployment | Vercel (Frontend)                     |
+
+---
+
+### 📁 Folder Structure
+
+```bash
+.
+├── src
+│   ├── app
+│   │   ├── login
+│   │   ├── otp
+│   │   ├── home
+│   │   ├── book/[id]
+│   │   ├── book/[id]/appointment
+│   ├── components
+│   │   └── BottomNavbar.tsx
+├── db.json  ← JSON Server mock data
+├── public
+└── README.md
+```
+
+---
+
+### 🚀 Getting Started Locally
+
+#### 🔹 1. Clone and Install
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+npm install
+```
+
+#### 🔹 2. Start JSON Server (Mock API)
+
+```bash
+npx json-server --watch db.json --port 5000
+```
+
+#### 🔹 3. Start Next.js Frontend
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+App runs at: [http://localhost:3000](http://localhost:3000)
+API runs at: [http://localhost:5000](http://localhost:5000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 📦 Example API Endpoints
 
-## Learn More
+* `GET /doctors` → list all doctors
+* `GET /doctors/:id` → get doctor details
+* You can extend with more endpoints in `db.json` as needed.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🖼️ Screenshots (Optional)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Home Page                   | Doctor Profile                | Booking Page                |
+| --------------------------- | ----------------------------- | --------------------------- |
+| ![](./screenshots/home.png) | ![](./screenshots/doctor.png) | ![](./screenshots/book.png) |
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### ✅ To Do (Next Features)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* [ ] Store appointments in `db.json`
+* [ ] Add patient profile page
+* [ ] Admin panel (mocked)
+* [ ] Real OTP API (optional)
+
+---
+
+### 👨‍💻 Author
+
+**A Prashanth**
+🔗 [LinkedIn](https://www.linkedin.com/in/prashanth-aousula-9a9b33369/) 
