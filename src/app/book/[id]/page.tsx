@@ -4,9 +4,27 @@ import { useEffect, useState } from "react";
 
 export default function DoctorDetailPage() {
   const router = useRouter();
+  type Doctor = {
+  id: number | string;
+  name: string;
+  image: string;
+  specialization: string;
+  degree: string;
+  patients: number;
+  experience: number;
+  rating: number;
+  reviews: number;
+  about: string;
+  service: string;
+  availability?: {
+    days: string;
+    time: string;
+  };
+};
+
   const params = useParams();
   const docId = Array.isArray(params?.id) ? params.id[0] : params?.id;
-  const [doctor, setDoctor] = useState(null);
+  const [doctor, setDoctor] = useState<Doctor | null>(null);
 
   useEffect(() => {
     if (!docId) return;

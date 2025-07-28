@@ -4,7 +4,25 @@ import { useEffect, useState } from "react";
 
 export default function AppointmentPage() {
   const { id } = useParams();
-  const [doctor, setDoctor] = useState(null);
+  type Doctor = {
+  id: number | string;
+  name: string;
+  image: string;
+  specialization: string;
+  degree: string;
+  patients: number;
+  experience: number;
+  rating: number;
+  reviews: number;
+  about: string;
+  service: string;
+  availability?: {
+    days: string;
+    time: string;
+  };
+};
+const [doctor, setDoctor] = useState<Doctor | null>(null);
+
   const [selectedDate, setSelectedDate] = useState("14");
   const [selectedSlot, setSelectedSlot] = useState("");
 

@@ -5,8 +5,16 @@ import { useRouter } from "next/navigation";
 import BottomNavbar from "../components/BottomNavbar";
 
 export default function HomePage() {
-  const [doctors, setDoctors] = useState([]);
+  
   const router = useRouter();
+  type Doctor = {
+  id: string | number;
+  name: string;
+  specialization: string;
+  image: string;
+  // Add any other properties you use: degree, rating, etc.
+};
+const [doctors, setDoctors] = useState<Doctor[]>([]);
 
   useEffect(() => {
     fetch("http://localhost:5000/doctors")

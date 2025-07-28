@@ -20,7 +20,7 @@ export default function OTPPage() {
   }, []);
 
   // Input change handler
-  const handleChange = (index, value) => {
+  const handleChange = (index: number, value: string) => {
     if (value.length > 1) return;
     const newOtp = [...otp];
     newOtp[index] = value;
@@ -28,7 +28,10 @@ export default function OTPPage() {
 
     // Auto focus next box
     if (value && index < 3) {
-      document.getElementById(`otp-${index + 1}`).focus();
+      const nextInput= document.getElementById(`otp-${index + 1}`);
+      if (nextInput) {
+        nextInput.focus();
+      }
     }
   };
 
