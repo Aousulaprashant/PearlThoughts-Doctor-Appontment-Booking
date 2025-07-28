@@ -1,9 +1,9 @@
 "use client";
 export const dynamic = "force-dynamic";
 import { useRouter, useParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState,Suspense } from "react";
 
-export default function DoctorDetailPage() {
+function DoctorDetail() {
   const router = useRouter();
   type Doctor = {
   id: number | string;
@@ -109,5 +109,12 @@ export default function DoctorDetailPage() {
         
         </div>
     </div>
+  );
+}
+export default function DoctorDetailPage() {
+  return (
+    <Suspense fallback={<div className="p-4 text-gray-400">Loading OTP page...</div>}>
+      <DoctorDetail />
+    </Suspense>
   );
 }

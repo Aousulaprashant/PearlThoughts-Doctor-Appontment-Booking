@@ -1,9 +1,10 @@
 "use client";
 
+export const dynamic = "force-dynamic";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 
-export default function OTPPage() {
+function OTPContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const login = searchParams.get("login") || ""; // Email or Phone passed from login page
@@ -115,5 +116,13 @@ export default function OTPPage() {
         ))}
       </div>
     </div>
+  );
+}
+
+export default function OTPPage() {
+  return (
+    <Suspense fallback={<div className="p-4 text-gray-400">Loading OTP page...</div>}>
+      <OTPContent />
+    </Suspense>
   );
 }

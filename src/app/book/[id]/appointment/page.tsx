@@ -1,9 +1,9 @@
 "use client";
 export const dynamic = "force-dynamic";
 import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 
-export default function AppointmentPage() {
+function Appointment() {
   const { id } = useParams();
   type Doctor = {
   id: number | string;
@@ -148,5 +148,12 @@ const [doctor, setDoctor] = useState<Doctor | null>(null);
       </button>
       </div>
     </div>
+  );
+}
+export default function AppointmentPage() {
+  return (
+    <Suspense fallback={<div className="p-4 text-gray-400">Loading OTP page...</div>}>
+      <Appointment />
+    </Suspense>
   );
 }
