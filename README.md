@@ -85,13 +85,7 @@ API runs at: [http://localhost:5000](http://localhost:5000)
 
 ---
 
-### 🖼️ Screenshots (Optional)
 
-| Home Page                   | Doctor Profile                | Booking Page                |
-| --------------------------- | ----------------------------- | --------------------------- |
-| ![](./screenshots/home.png) | ![](./screenshots/doctor.png) | ![](./screenshots/book.png) |
-
----
 
 ### ✅ To Do (Next Features)
 
