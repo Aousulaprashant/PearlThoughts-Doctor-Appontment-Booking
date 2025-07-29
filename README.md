@@ -2,7 +2,7 @@
 
 A responsive doctor appointment booking app built using **Next.js 14 (App Router)**, **Tailwind CSS**, and **JSON Server** as a mock backend.
 
-🚀 **Live Demo:** [Click here](https://pearl-thoughts-doctor-appontment-bo-flax.vercel.app/login)
+🚀 **Live Demo:** [Click here](https://pearl-thoughts-doctor-appontment-bo.vercel.app/)
 📦 **Mock API:** Powered by [JSON Server](https://github.com/typicode/json-server)
 
 ---
