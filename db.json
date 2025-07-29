@@ -23,6 +23,12 @@
       "name": "prashanth",
       "emailOrPhone": "p2@gmail.com",
       "password": "12345"
+    },
+    {
+      "id": "ffad",
+      "name": "prashnth",
+      "emailOrPhone": "prashanthaousula@gmail.com",
+      "password": "11111"
     }
   ],
   "appointments": [],

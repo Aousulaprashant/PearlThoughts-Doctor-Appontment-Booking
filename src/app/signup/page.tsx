@@ -22,7 +22,7 @@ export default function SignupPage() {
 
     try {
       const checkRes = await fetch(
-        `http://localhost:5000/users?emailOrPhone=${emailOrPhone}`
+        `https://json-mock-api-axzu.onrender.com/users?emailOrPhone=${emailOrPhone}`
       );
       const existingUsers = await checkRes.json();
       if (existingUsers.length > 0) {
@@ -30,7 +30,7 @@ export default function SignupPage() {
         return;
       }
 
-      const res = await fetch("http://localhost:5000/users", {
+      const res = await fetch("https://json-mock-api-axzu.onrender.com/users", {
         method: "POST",
         body: JSON.stringify({ name, emailOrPhone, password }),
         headers: {

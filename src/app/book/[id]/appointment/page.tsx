@@ -51,7 +51,7 @@ const [doctor, setDoctor] = useState<Doctor | null>(null);
   ];
 
   useEffect(() => {
-    fetch(`http://localhost:5000/doctors/${id}`)
+    fetch(`https://json-mock-api-axzu.onrender.com/doctors/${id}`)
       .then((res) => res.json())
       .then(setDoctor)
       .catch(console.error);

@@ -17,7 +17,7 @@ export default function HomePage() {
 const [doctors, setDoctors] = useState<Doctor[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/doctors")
+    fetch("https://json-mock-api-axzu.onrender.com/doctors")
       .then((res) => res.json())
       .then((data) => setDoctors(data))
       .catch((err) => console.error("Failed to fetch doctors:", err));

@@ -29,7 +29,7 @@ function DoctorDetail() {
 
   useEffect(() => {
     if (!docId) return;
-    fetch(`http://localhost:5000/doctors/${docId}`)
+    fetch(`https://json-mock-api-axzu.onrender.com/doctors/${docId}`)
       .then((res) => {
         if (!res.ok) throw new Error("Doctor not found");
         return res.json();

@@ -18,7 +18,7 @@ export default function LoginPage() {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/users?emailOrPhone=${emailOrPhone}&password=${password}`
+        `https://json-mock-api-axzu.onrender.com/users?emailOrPhone=${emailOrPhone}&password=${password}`
       );
       const users = await res.json();
 
